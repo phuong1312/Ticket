@@ -1,3 +1,11 @@
 <resources>
     <string name="app_name">Ticket</string>
+
+    <string name="hint_taikhoan">Nhập tên tài khoản</string>
+    <string name="hint_matkhau">Nhập mật khẩu</string>
+    <string name="hint_nhaplaimatkhau">Xác nhận mật khẩu</string>
+    <string name="btn_dangki">Đăng kí</string>
+    <string name="btn_dangnhap">Đăng nhập</string>
+    <string name="hint_sdt">Nhập số điện thoại</string>
+    <string name="hint_email">Nhập email</string>
 </resources>

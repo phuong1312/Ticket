@@ -1,18 +1,85 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:orientation="vertical"
+    tools:context=".DangNhapActivity">
 
-    <TextView
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Hello World!"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_margin="@dimen/layout_magrin"
+        android:gravity="bottom"
+        android:orientation="vertical">
 
-</androidx.constraintlayout.widget.ConstraintLayout>
+        <EditText
+            android:id="@+id/edtTaiKhoan"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:background="@drawable/custom_border"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:hint="@string/hint_taikhoan"
+            android:minHeight="@dimen/min_height"
+            android:textSize="@dimen/text_size_edt" />
+
+        <EditText
+            android:id="@+id/edtMatKhau"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:hint="@string/hint_matkhau"
+            android:inputType="numberPassword"
+            android:minHeight="@dimen/min_height"
+            android:textSize="@dimen/text_size_edt" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center_horizontal"
+        android:layout_marginLeft="@dimen/layout_magrin_left"
+        android:layout_marginRight="@dimen/layout_magrin_right"
+        android:orientation="horizontal">
+
+        <!--        <Button-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginBottom="@dimen/margin_bottom"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:background="@drawable/custom_border"-->
+        <!--            android:text="Dang Nhap" />-->
+
+        <!--        <Button-->
+        <!--            android:background="@drawable/custom_border"-->
+        <!--            android:layout_width="0dp"-->
+        <!--            android:layout_weight="1"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:text="Dang Ki"/>-->
+
+
+        <Button
+            android:id="@+id/btnDangNhap"
+            android:background="@drawable/custom_border"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/btn_dangnhap"
+            android:textSize="@dimen/text_size_btn"/>
+
+        <Button
+            android:id="@+id/BtnDangKi"
+            android:layout_marginLeft="@dimen/margin_left"
+            android:layout_width="@dimen/btn_width"
+            android:layout_height="wrap_content"
+            android:background="@drawable/custom_border"
+            android:text="@string/btn_dangki"
+            android:textSize="@dimen/text_size_btn" />
+    </LinearLayout>
+
+</LinearLayout>
