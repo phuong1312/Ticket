@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".DangNhapActivity">
+    tools:context=".MainActivity">
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -16,15 +16,18 @@
         android:orientation="vertical">
 
         <EditText
-            android:id="@+id/edtTaiKhoan"
+            android:id="@+id/edtEmail"
+            android:textSize="@dimen/text_size_edt"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:background="@drawable/custom_border"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginBottom="@dimen/margin_bottom"
-            android:background="@drawable/custom_border"
-            android:drawableStart="@drawable/ic_baseline_person_24"
-            android:hint="@string/hint_taikhoan"
+            android:ems="20"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
             android:minHeight="@dimen/min_height"
-            android:textSize="@dimen/text_size_edt" />
+            android:layout_marginBottom="@dimen/margin_bottom"
+            android:layout_marginTop="@dimen/margin_top"/>
 
         <EditText
             android:id="@+id/edtMatKhau"
@@ -73,7 +76,7 @@
             android:textSize="@dimen/text_size_btn"/>
 
         <Button
-            android:id="@+id/BtnDangKi"
+            android:id="@+id/btnDangKi"
             android:layout_marginLeft="@dimen/margin_left"
             android:layout_width="@dimen/btn_width"
             android:layout_height="wrap_content"

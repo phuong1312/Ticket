@@ -11,18 +11,18 @@ import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
 import com.google.firebase.database.ValueEventListener;
 
-public class DangNhapActivity extends AppCompatActivity {
+public class MainActivity extends AppCompatActivity {
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.dangnhap_layout);
+        setContentView(R.layout.main_layout);
 
         // Write a message to the database
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("message");//Key hiển thị ở RealTime DataBase trên FireBase
 
-        myRef.setValue("Này tao làm");//Giá trị lưu
+        myRef.setValue("heloo");//Giá trị lưu
 
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
