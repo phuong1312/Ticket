@@ -22,7 +22,7 @@ public class MainActivity extends AppCompatActivity {
         FirebaseDatabase database = FirebaseDatabase.getInstance();
         DatabaseReference myRef = database.getReference("message");//Key hiển thị ở RealTime DataBase trên FireBase
 
-        myRef.setValue("Hello, World!");//Giá trị lưu
+        myRef.setValue("Này tao làm");//Giá trị lưu
 
         // Read from the database
         myRef.addValueEventListener(new ValueEventListener() {
