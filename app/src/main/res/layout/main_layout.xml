@@ -7,10 +7,17 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
 
-    <TextView
-        android:gravity="center"
+    <androidx.viewpager2.widget.ViewPager2
+        android:id="@+id/view_pager2"
         android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:text="Chào"
-        android:textSize="50sp"/>
+        android:layout_height="220dp" />
+
+    <me.relex.circleindicator.CircleIndicator3
+        android:id="@+id/circle_indicator3"
+        android:layout_width="wrap_content"
+        android:layout_height="40dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="5dp"
+        app:ci_drawable="@drawable/bg_circle" />
+
 </LinearLayout>
