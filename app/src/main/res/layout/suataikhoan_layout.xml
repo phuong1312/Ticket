@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/bg_white_color_layout"
+    tools:context=".ThongTinTaiKhoanActivity">
+    <LinearLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/layout_magrin"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sửa Tài Khoản"
+            android:textStyle="bold"
+            android:textSize="30sp"
+            android:textColor="@color/black"
+            android:textAlignment="center"
+            android:layout_marginBottom="20dp"/>
+
+        <EditText
+            android:id="@+id/edtTaiKhoan"
+            android:drawableStart="@drawable/ic_baseline_person_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:inputType="textPersonName"
+            android:background="@drawable/custom_border"
+            android:hint="@string/hint_taikhoan"
+            android:textSize="@dimen/text_size_edt"
+            android:minHeight="@dimen/min_height"/>
+
+        <EditText
+            android:id="@+id/edtMatKhau"
+            android:textSize="@dimen/text_size_edt"
+            android:drawableStart="@drawable/ic_baseline_lock_24"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="10"
+            android:hint="@string/hint_matkhau"
+            android:inputType="textPassword"
+            android:layout_marginTop="@dimen/margin_top"
+            android:background="@drawable/custom_border"
+            android:minHeight="@dimen/min_height" />
+
+        <EditText
+            android:id="@+id/edtSDT"
+            android:textSize="@dimen/text_size_edt"
+            android:drawableStart="@drawable/ic_baseline_phone_24"
+            android:background="@drawable/custom_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="11"
+            android:hint="@string/hint_sdt"
+            android:inputType="phone"
+            android:minHeight="@dimen/min_height"
+            android:layout_marginTop="@dimen/margin_top"/>
+
+        <EditText
+            android:id="@+id/edtEmail"
+            android:textSize="@dimen/text_size_edt"
+            android:drawableStart="@drawable/ic_baseline_email_24"
+            android:background="@drawable/custom_border"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:ems="20"
+            android:hint="@string/hint_email"
+            android:inputType="textEmailAddress"
+            android:minHeight="@dimen/min_height"
+            android:layout_marginTop="@dimen/margin_top"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center_horizontal"
+            android:orientation="horizontal"
+            android:layout_marginTop="20dp">
+
+            <Button
+                android:id="@+id/btnSua2"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:text="@string/btn_sua"
+                android:textSize="@dimen/text_size_btn"
+                android:layout_marginRight="10dp"/>
+            <Button
+
+                android:id="@+id/btnHuy"
+                android:layout_width="@dimen/btn_width"
+                android:layout_height="wrap_content"
+                android:background="@drawable/custom_border"
+                android:text="@string/btn_huy"
+                android:textSize="@dimen/text_size_btn"
+                android:layout_marginLeft="10dp"/>
+
+        </LinearLayout>
+    </LinearLayout>
+
+</LinearLayout>

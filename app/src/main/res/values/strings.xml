@@ -8,4 +8,7 @@
     <string name="btn_dangnhap">Đăng nhập</string>
     <string name="hint_sdt">Nhập số điện thoại</string>
     <string name="hint_email">Nhập email</string>
+    <string name="btn_sua">Sửa</string>
+    <string name="btn_huy">Hủy</string>
+    <string name="title_ifo">Thông Tin Tài Khoản</string>
 </resources>

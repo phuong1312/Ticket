@@ -12,7 +12,12 @@
         <entry key="..\:/Ticket/app/src/main/res/layout/fragment_photo_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Ticket/app/src/main/res/layout/main_layout.xml" value="0.20416666666666666" />
         <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/drawable/bg_circle.xml" value="0.2265" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/drawable/bg_white_color_layout.xml" value="0.2265" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/dang_ki_layout.xml" value="0.25" />
         <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/dangnhap_layout.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/suataikhoan_layout.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/thongtintaikhoan_layout.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.2265" />
       </map>
     </option>
   </component>
