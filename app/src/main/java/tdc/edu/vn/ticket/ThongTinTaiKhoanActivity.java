@@ -45,24 +45,6 @@ public class ThongTinTaiKhoanActivity extends AppCompatActivity {
         txSdt = (TextView) findViewById(R.id.txSdt);
         btnSua1 = (Button) findViewById(R.id.btnSua1);
 
-//        FirebaseDatabase.getInstance().getReference("Users")
-//                .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).get().addOnCompleteListener(new OnCompleteListener<DataSnapshot>() {
-//            @Override
-//            public void onComplete(@NonNull Task<DataSnapshot> task) {
-//                if (!task.isSuccessful()) {
-//                    Log.e("firebase", "Error getting data", task.getException());
-//                }
-//                else {
-//                    User user = task.getResult().getValue(User.class);
-//                    txEmail.setText(user.getEmail());
-//                    txTaiKhoan.setText(user.getTaiKhoan());
-//                    txMatKhau.setText(user.getMatKhau());
-//                    txSdt.setText(user.getSdt());
-//                    Log.d("firebase", String.valueOf(task.getResult().getValue()));
-//                }
-//            }
-//        });
-
         FirebaseDatabase.getInstance().getReference("Users")
                 .child(FirebaseAuth.getInstance().getCurrentUser().getUid()).addValueEventListener(new ValueEventListener() {
             @Override
