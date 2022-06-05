@@ -81,6 +81,7 @@ public class DangKiActivity extends AppCompatActivity {
             return;
         }
 
+        // tạo bảng để lưu giá trị nhập vào
         auth.createUserWithEmailAndPassword(email, matKhau).addOnCompleteListener(new OnCompleteListener<AuthResult>() {
             @Override
             public void onComplete(@NonNull Task<AuthResult> task) {
