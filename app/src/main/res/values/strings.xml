@@ -8,4 +8,6 @@
     <string name="btn_dangnhap">Đăng nhập</string>
     <string name="hint_sdt">Nhập số điện thoại</string>
     <string name="hint_email">Nhập email</string>
+    <string name="tv_thong_tin_phim">Thông Tin Phim</string>
+    <string name="btn_dat_ve">Đặt vé</string>
 </resources>

@@ -5,6 +5,7 @@ import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.viewpager2.widget.ViewPager2;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.drawable.BitmapDrawable;
@@ -139,6 +140,52 @@ public class MainActivity extends AppCompatActivity {
                     Log.d("mangbyte", "onChildAdded: "+ mangHinh);
                     Bitmap bitmap = BitmapFactory.decodeByteArray(mangHinh, 0, mangHinh.length);
                     anh6.setImageBitmap(bitmap);
+                }
+            }
+
+            @Override
+            public void onChildChanged(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+            }
+
+            @Override
+            public void onChildRemoved(@NonNull DataSnapshot snapshot) {
+
+            }
+
+            @Override
+            public void onChildMoved(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError error) {
+
+            }
+        });
+
+        reference.child("Phim").addChildEventListener(new ChildEventListener() {
+            @Override
+            public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
+                Phim phim = snapshot.getValue(Phim.class);
+                if (phim.getId()==1){
+                    anh1.setOnClickListener(new View.OnClickListener() {
+
+                        @Override
+                        public void onClick(View v) {
+
+                            Intent intent = new Intent(MainActivity.this, ChiTietPhim.class);
+                            Bundle data = new Bundle();
+                            data.putString("IMG", phim.str_img);
+                            data.putString("TENPHIM", phim.tenPhim);
+                            data.putString("MOTANGAN", phim.thongTinPhim.moTaNgan);
+                            data.putString("NGONNGU", phim.thongTinPhim.theLoai);
+                            data.putString("THOILUONG", phim.thongTinPhim.thoiLuong);
+                            data.putString("THELOAI", phim.thongTinPhim.ngonNgu);
+                            intent.putExtra("DATA", data);
+                            startActivity(intent);
+                        }
+                    });
                 }
             }
 
