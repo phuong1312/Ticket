@@ -9,6 +9,7 @@ import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Base64;
 import android.widget.ArrayAdapter;
+import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
 import android.widget.Toast;
@@ -34,10 +35,15 @@ public class ChiTietPhim extends AppCompatActivity {
         setContentView(R.layout.chi_tiet_phim_layout);
 
         reference = FirebaseDatabase.getInstance().getReference();
-        listPhim = (ListView)findViewById(R.id.lvThongTin);
+        //listPhim = (ListView)findViewById(R.id.lvThongTin);
 
         ImageView anhChiTiet = (ImageView)findViewById(R.id.img_chiTiet);
 
+        EditText edtTenPhim = (EditText)findViewById(R.id.edtTenPhim);
+        EditText edtMoTa= (EditText)findViewById(R.id.edtMoTa);
+        EditText edtTheLoai = (EditText)findViewById(R.id.edtTheLoai);
+        EditText edtThoiLuong = (EditText)findViewById(R.id.edtThoiLuong);
+        EditText edtNgonNgu = (EditText)findViewById(R.id.edtNgonNgu);
 
         String img = getIntent().getBundleExtra("DATA").getString("IMG");
         String tenPhim = getIntent().getBundleExtra("DATA").getString("TENPHIM");
@@ -46,22 +52,28 @@ public class ChiTietPhim extends AppCompatActivity {
         String thoiLuong = getIntent().getBundleExtra("DATA").getString("THOILUONG");
         String ngonNgu = getIntent().getBundleExtra("DATA").getString("NGONNGU");
 
-        arrPhim = new ArrayList<String>();
-        adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrPhim);
-        listPhim.setAdapter(adapter);
+        edtTenPhim.setText(tenPhim);
+        edtMoTa.setText(moTaNgan);
+        edtTheLoai.setText(theLoai);
+        edtThoiLuong.setText(thoiLuong);
+        edtNgonNgu.setText(ngonNgu);
+
+//        arrPhim = new ArrayList<String>();
+//        adapter = new ArrayAdapter(this, android.R.layout.simple_list_item_1, arrPhim);
+//        listPhim.setAdapter(adapter);
 
         //Toast.makeText(ChiTietPhim.this, tenPhim +"-"+moTaNgan+"-"+theLoai+"-"+thoiLuong+"-"+ngonNgu,Toast.LENGTH_LONG).show();
 
         reference.child("Phim").addChildEventListener(new ChildEventListener() {
             @Override
             public void onChildAdded(@NonNull DataSnapshot snapshot, @Nullable String previousChildName) {
-                Phim phim = snapshot.getValue(Phim.class);
+                //Phim phim = snapshot.getValue(Phim.class);
                 byte[] mangHinh = Base64.decode(img, Base64.DEFAULT);
                 Bitmap bitmap = BitmapFactory.decodeByteArray(mangHinh, 0, mangHinh.length);
                 anhChiTiet.setImageBitmap(bitmap);
-                arrPhim.add("Tên phim: "+ phim.tenPhim + "\nMô tả ngắn: "+ phim.thongTinPhim.moTaNgan +
-                        "\nThể loại: "+ phim.thongTinPhim.theLoai+ "\nThời lượng: "+ phim.thongTinPhim.thoiLuong +"\nNgôn ngữ: "+ phim.thongTinPhim.ngonNgu);
-                adapter.notifyDataSetChanged();
+//                arrPhim.add("Tên phim: "+ tenPhim + "\nMô tả ngắn: "+ moTaNgan +
+//                        "\nThể loại: "+ theLoai + "\nThời lượng: "+ thoiLuong +"\nNgôn ngữ: "+ ngonNgu);
+                //adapter.notifyDataSetChanged();
             }
 
             @Override

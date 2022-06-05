@@ -10,4 +10,9 @@
     <string name="hint_email">Nhập email</string>
     <string name="tv_thong_tin_phim">Thông Tin Phim</string>
     <string name="btn_dat_ve">Đặt vé</string>
+    <string name="edt_ten_phim">Tên phim</string>
+    <string name="edt_mo_ta">Mô tả ngắn</string>
+    <string name="edt_thoi_luong">Thời lượng</string>
+    <string name="edt_the_loai">Thể loại</string>
+    <string name="edt_ngon_ngu">Ngôn ngữ</string>
 </resources>

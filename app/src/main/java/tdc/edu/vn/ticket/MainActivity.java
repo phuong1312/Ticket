@@ -107,37 +107,37 @@ public class MainActivity extends AppCompatActivity {
 
                 if (phim.getId() == 1){
                     byte[] mangHinh = Base64.decode(phim.str_img.toString(), Base64.DEFAULT);
-                    Log.d("mangbyte", "onChildAdded: "+ mangHinh);
+
                     Bitmap bitmap = BitmapFactory.decodeByteArray(mangHinh, 0, mangHinh.length);
                     anh1.setImageBitmap(bitmap);
                 }
                 if (phim.getId() == 2){
                     byte[] mangHinh = Base64.decode(phim.str_img.toString(), Base64.DEFAULT);
-                    Log.d("mangbyte", "onChildAdded: "+ mangHinh);
+
                     Bitmap bitmap = BitmapFactory.decodeByteArray(mangHinh, 0, mangHinh.length);
                     anh2.setImageBitmap(bitmap);
                 }
                 if (phim.getId() == 3){
                     byte[] mangHinh = Base64.decode(phim.str_img.toString(), Base64.DEFAULT);
-                    Log.d("mangbyte", "onChildAdded: "+ mangHinh);
+
                     Bitmap bitmap = BitmapFactory.decodeByteArray(mangHinh, 0, mangHinh.length);
                     anh3.setImageBitmap(bitmap);
                 }
                 if (phim.getId() == 4){
                     byte[] mangHinh = Base64.decode(phim.str_img.toString(), Base64.DEFAULT);
-                    Log.d("mangbyte", "onChildAdded: "+ mangHinh);
+
                     Bitmap bitmap = BitmapFactory.decodeByteArray(mangHinh, 0, mangHinh.length);
                     anh4.setImageBitmap(bitmap);
                 }
                 if (phim.getId() == 5){
                     byte[] mangHinh = Base64.decode(phim.str_img.toString(), Base64.DEFAULT);
-                    Log.d("mangbyte", "onChildAdded: "+ mangHinh);
+
                     Bitmap bitmap = BitmapFactory.decodeByteArray(mangHinh, 0, mangHinh.length);
                     anh5.setImageBitmap(bitmap);
                 }
                 if (phim.getId() == 6){
                     byte[] mangHinh = Base64.decode(phim.str_img.toString(), Base64.DEFAULT);
-                    Log.d("mangbyte", "onChildAdded: "+ mangHinh);
+
                     Bitmap bitmap = BitmapFactory.decodeByteArray(mangHinh, 0, mangHinh.length);
                     anh6.setImageBitmap(bitmap);
                 }
@@ -170,10 +170,93 @@ public class MainActivity extends AppCompatActivity {
                 Phim phim = snapshot.getValue(Phim.class);
                 if (phim.getId()==1){
                     anh1.setOnClickListener(new View.OnClickListener() {
-
                         @Override
                         public void onClick(View v) {
-
+                            Intent intent = new Intent(MainActivity.this, ChiTietPhim.class);
+                            Bundle data = new Bundle();
+                            data.putString("IMG", phim.str_img);
+                            data.putString("TENPHIM", phim.tenPhim);
+                            data.putString("MOTANGAN", phim.thongTinPhim.moTaNgan);
+                            data.putString("NGONNGU", phim.thongTinPhim.theLoai);
+                            data.putString("THOILUONG", phim.thongTinPhim.thoiLuong);
+                            data.putString("THELOAI", phim.thongTinPhim.ngonNgu);
+                            intent.putExtra("DATA", data);
+                            startActivity(intent);
+                        }
+                    });
+                }
+                if (phim.getId()==2){
+                    anh2.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(MainActivity.this, ChiTietPhim.class);
+                            Bundle data = new Bundle();
+                            data.putString("IMG", phim.str_img);
+                            data.putString("TENPHIM", phim.tenPhim);
+                            data.putString("MOTANGAN", phim.thongTinPhim.moTaNgan);
+                            data.putString("NGONNGU", phim.thongTinPhim.theLoai);
+                            data.putString("THOILUONG", phim.thongTinPhim.thoiLuong);
+                            data.putString("THELOAI", phim.thongTinPhim.ngonNgu);
+                            intent.putExtra("DATA", data);
+                            startActivity(intent);
+                        }
+                    });
+                }
+                if (phim.getId()==3){
+                    anh3.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(MainActivity.this, ChiTietPhim.class);
+                            Bundle data = new Bundle();
+                            data.putString("IMG", phim.str_img);
+                            data.putString("TENPHIM", phim.tenPhim);
+                            data.putString("MOTANGAN", phim.thongTinPhim.moTaNgan);
+                            data.putString("NGONNGU", phim.thongTinPhim.theLoai);
+                            data.putString("THOILUONG", phim.thongTinPhim.thoiLuong);
+                            data.putString("THELOAI", phim.thongTinPhim.ngonNgu);
+                            intent.putExtra("DATA", data);
+                            startActivity(intent);
+                        }
+                    });
+                }
+                if (phim.getId()==4){
+                    anh4.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(MainActivity.this, ChiTietPhim.class);
+                            Bundle data = new Bundle();
+                            data.putString("IMG", phim.str_img);
+                            data.putString("TENPHIM", phim.tenPhim);
+                            data.putString("MOTANGAN", phim.thongTinPhim.moTaNgan);
+                            data.putString("NGONNGU", phim.thongTinPhim.theLoai);
+                            data.putString("THOILUONG", phim.thongTinPhim.thoiLuong);
+                            data.putString("THELOAI", phim.thongTinPhim.ngonNgu);
+                            intent.putExtra("DATA", data);
+                            startActivity(intent);
+                        }
+                    });
+                }
+                if (phim.getId()==5){
+                    anh5.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
+                            Intent intent = new Intent(MainActivity.this, ChiTietPhim.class);
+                            Bundle data = new Bundle();
+                            data.putString("IMG", phim.str_img);
+                            data.putString("TENPHIM", phim.tenPhim);
+                            data.putString("MOTANGAN", phim.thongTinPhim.moTaNgan);
+                            data.putString("NGONNGU", phim.thongTinPhim.theLoai);
+                            data.putString("THOILUONG", phim.thongTinPhim.thoiLuong);
+                            data.putString("THELOAI", phim.thongTinPhim.ngonNgu);
+                            intent.putExtra("DATA", data);
+                            startActivity(intent);
+                        }
+                    });
+                }
+                if (phim.getId()==6){
+                    anh6.setOnClickListener(new View.OnClickListener() {
+                        @Override
+                        public void onClick(View v) {
                             Intent intent = new Intent(MainActivity.this, ChiTietPhim.class);
                             Bundle data = new Bundle();
                             data.putString("IMG", phim.str_img);

@@ -20,13 +20,120 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="@string/tv_thong_tin_phim"/>
-    <ListView
-        android:id="@+id/lvThongTin"
+    <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="0dp"
-        android:layout_weight="6">
+        android:layout_weight="6"
+        android:orientation="vertical">
 
-    </ListView>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_size_edt"
+                android:text="@string/edt_ten_phim"/>
+
+            <EditText
+                android:id="@+id/edtTenPhim"
+                android:layout_width="0dp"
+                android:textSize="@dimen/text_size_edt"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:gravity="center"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_size_edt"
+                android:text="@string/edt_mo_ta"/>
+
+            <EditText
+                android:id="@+id/edtMoTa"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_edt"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_size_edt"
+                android:text="@string/edt_the_loai"/>
+
+            <EditText
+                android:id="@+id/edtTheLoai"
+                android:layout_width="0dp"
+                android:textSize="@dimen/text_size_edt"
+                android:layout_height="wrap_content"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_size_edt"
+                android:text="@string/edt_thoi_luong"/>
+
+            <EditText
+                android:id="@+id/edtThoiLuong"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_edt"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:textSize="@dimen/text_size_edt"
+                android:text="@string/edt_ngon_ngu"/>
+
+            <EditText
+                android:id="@+id/edtNgonNgu"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_edt"
+                android:layout_weight="7"/>
+
+        </LinearLayout>
+
+    </LinearLayout>
     <Button
         android:id="@+id/btnDatVe"
         android:layout_gravity="center"
