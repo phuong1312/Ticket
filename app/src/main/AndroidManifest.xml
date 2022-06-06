@@ -11,12 +11,9 @@
         android:theme="@style/Theme.Ticket">
 
         <activity
-            android:name=".DangNhapActivity"
+            android:name=".DangKiActivity"
             android:exported="false"/>
-
-
-
-        <activity android:name=".DangKiActivity"
+        <activity android:name=".MainActivity"
             android:exported="false"/>
         <activity android:name=".ThongTinTaiKhoanActivity"
             android:exported="false"/>
@@ -29,7 +26,7 @@
         <activity android:name=".HoaDonActivity"
             android:exported="false"/>
         <activity
-            android:name=".MainActivity"
+            android:name=".DangNhapActivity"
             android:exported="true">
 
             <intent-filter>
