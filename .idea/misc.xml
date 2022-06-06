@@ -1,5 +1,20 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/drawable/ic_baseline_email_24.xml" value="0.1" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/chi_tiet_phim_layout.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/dang_ki_layout.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/dangnhap_layout.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/fragment_photo_layout.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/main_layout.xml" value="0.10989583333333333" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/suataikhoan_layout.xml" value="0.25" />
+        <entry key="..\:/Users/ASUS/Desktop/Project/Project_Android/Ticket/app/src/main/res/layout/thongtintaikhoan_layout.xml" value="0.25" />
+      </map>
+    </option>
+  </component>
   <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
     <output url="file://$PROJECT_DIR$/build/classes" />
   </component>

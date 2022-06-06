@@ -1,3 +1,21 @@
 <resources>
     <string name="app_name">Ticket</string>
+
+    <string name="hint_taikhoan">Nhập tên tài khoản</string>
+    <string name="hint_matkhau">Nhập mật khẩu</string>
+    <string name="hint_nhaplaimatkhau">Xác nhận mật khẩu</string>
+    <string name="btn_dangki">Đăng kí</string>
+    <string name="btn_dangnhap">Đăng nhập</string>
+    <string name="hint_sdt">Nhập số điện thoại</string>
+    <string name="hint_email">Nhập email</string>
+    <string name="btn_sua">Sửa</string>
+    <string name="btn_huy">Hủy</string>
+    <string name="title_ifo">Thông Tin Tài Khoản</string>
+    <string name="tv_thong_tin_phim">Thông Tin Phim</string>
+    <string name="btn_dat_ve">Đặt vé</string>
+    <string name="edt_ten_phim">Tên phim</string>
+    <string name="edt_mo_ta">Mô tả ngắn</string>
+    <string name="edt_thoi_luong">Thời lượng</string>
+    <string name="edt_the_loai">Thể loại</string>
+    <string name="edt_ngon_ngu">Ngôn ngữ</string>
 </resources>
