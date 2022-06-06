@@ -12,21 +12,28 @@
 
         <activity
             android:name=".DangKiActivity"
+            android:label="@string/mh_dang_ki"
             android:exported="false"/>
         <activity android:name=".MainActivity"
+            android:label="@string/mh_trang_chu"
             android:exported="false"/>
         <activity android:name=".ThongTinTaiKhoanActivity"
+            android:label="@string/mh_thong_tin_tk"
             android:exported="false"/>
         <activity android:name=".ChiTietPhim"
+            android:label="@string/mh_chi_tiet_phim"
             android:exported="false"/>
         <activity android:name=".LichChieuActivity"
+            android:label="@string/mh_lich_chieu"
             android:exported="false"/>
         <activity android:name=".DatChoActivity"
+            android:label="@string/mh_dat_cho"
             android:exported="false"/>
         <activity android:name=".HoaDonActivity"
             android:exported="false"/>
         <activity
             android:name=".DangNhapActivity"
+
             android:exported="true">
 
             <intent-filter>

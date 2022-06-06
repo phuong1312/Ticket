@@ -18,4 +18,12 @@
     <string name="edt_thoi_luong">Thời lượng</string>
     <string name="edt_the_loai">Thể loại</string>
     <string name="edt_ngon_ngu">Ngôn ngữ</string>
+    <string name="mh_dang_nhap">Đăng Nhập</string>
+    <string name="mh_chi_tiet_phim">Chi tiết phim</string>
+    <string name="mh_dang_ki">Đăng kí</string>
+    <string name="mh_dat_cho">Đặt chỗ</string>
+    <string name="mh_lich_chieu">Lịch chiếu</string>
+    <string name="mh_thong_tin_tk">Thông tin tài khoản</string>
+    <string name="mh_hoa_don">Hoá đơn</string>
+    <string name="mh_trang_chu">Trang Chủ</string>
 </resources>

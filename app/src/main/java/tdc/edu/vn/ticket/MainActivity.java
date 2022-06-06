@@ -34,6 +34,7 @@ import tdc.edu.vn.ticket.Slider.PhotoAdapter;
 import tdc.edu.vn.ticket.Slider.ZoomOutPageTransformer;
 
 public class MainActivity extends AppCompatActivity {
+    private View btn;
     private DatabaseReference reference;
     private ViewPager2 viewPager2;
     private CircleIndicator3 circleIndicator3;
@@ -57,7 +58,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.main_layout);
-
+        btn = findViewById(R.id.fab);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(MainActivity.this, ThongTinTaiKhoanActivity.class);
+                startActivity(intent);
+            }
+        });
         reference = FirebaseDatabase.getInstance().getReference();
         //Button btnSave = (Button)findViewById(R.id.btnSave);
 
