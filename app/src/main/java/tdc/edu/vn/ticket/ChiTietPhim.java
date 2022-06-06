@@ -1,10 +1,13 @@
 package tdc.edu.vn.ticket;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.os.Bundle;
 import android.util.Base64;
+import android.view.View;
 import android.widget.ArrayAdapter;
+import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageView;
 import android.widget.ListView;
@@ -22,6 +25,7 @@ import com.google.firebase.database.FirebaseDatabase;
 import java.util.ArrayList;
 
 public class ChiTietPhim extends AppCompatActivity {
+    private Button btn;
     private DatabaseReference reference;
     ListView listPhim;
     ArrayList<String> arrPhim;
@@ -30,6 +34,15 @@ public class ChiTietPhim extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.chi_tiet_phim_layout);
+
+        btn = findViewById(R.id.btnDatVe1);
+        btn.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Intent intent = new Intent(ChiTietPhim.this, LichChieuActivity.class);
+                startActivity(intent);
+            }
+        });
 
         reference = FirebaseDatabase.getInstance().getReference();
         //listPhim = (ListView)findViewById(R.id.lvThongTin);
